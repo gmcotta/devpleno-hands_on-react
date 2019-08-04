@@ -6,6 +6,7 @@
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "minhas-series-server": "https://github.com/tuliofaria/minhas-series-server",
+    "npm-run-all": "^4.1.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
@@ -13,7 +14,9 @@
     "reactstrap": "^8.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm-run-all build start-server",
+    "start-server": "node node_modules/minhas-series-server/index.js",
+    "start-react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
