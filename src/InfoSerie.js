@@ -111,14 +111,14 @@ const InfoSerie = ({match}) => {
                             <input type="text" value ={form.name} onChange={onChange('name')} className="form-control" id="name" placeholder="Nome da Série"/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="name">Comentários</label>
-                            <input type="text" value={form.comments} onChange={onChange('comments')} className="form-control" id="name" placeholder="Adicione um comentário"/>
-                        </div>
-                        <div className="form-group">
                             <label htmlFor="name">Gênero</label>
                             <select className="form-control" onChange={onChangeGenre} value={genreId}>
                                 { genres.map(genre => <option key={genre.id} value={genre.id}>{genre.name}</option>)}
                             </select>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="name">Comentários</label>
+                            <input type="text" value={form.comments} onChange={onChange('comments')} className="form-control" id="name" placeholder="Adicione um comentário"/>
                         </div>
                         <div className="form-group">
                             <div className="form-check">
@@ -132,7 +132,7 @@ const InfoSerie = ({match}) => {
                         </div>
                         <button type="button" onClick={save} className="btn btn-primary">Salvar</button>
                     </form>
-                    <pre>{JSON.stringify(form)}</pre>
+                    
                 </div>
             }
             

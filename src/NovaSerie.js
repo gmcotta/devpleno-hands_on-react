@@ -54,14 +54,12 @@ const NovaSerie = () => {
                     <label htmlFor="name">Nome</label>
                     <input type="text" value ={name} onChange={onChange} className="form-control" id="name" placeholder="Nome da Série"/>
                 </div>
-                {
                 <div className="form-group">
                     <label htmlFor="name">Gênero</label>
                     <select className="form-control" onChange={onChangeGenre} value={genreId}>
                         { genres.map(genre => <option key={genre.id} value={genre.id}>{genre.name}</option>)}
                     </select>
                 </div>
-                }
                 <div className="form-group">
                     <div className="form-check">
                         <input className="form-check-input" type="radio" name="status" id="assistido" value="ASSISTIDO" onClick={seleciona('ASSISTIDO')}/>
