@@ -112,7 +112,7 @@ const InfoSerie = ({match}) => {
                         </div>
                         <div className="form-group">
                             <label htmlFor="name">Comentários</label>
-                            <input type="text" value ={form.comments} onChange={onChange('comments')} className="form-control" id="name" placeholder="Adicione um comentário"/>
+                            <input type="text" value={form.comments} onChange={onChange('comments')} className="form-control" id="name" placeholder="Adicione um comentário"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="name">Gênero</label>
